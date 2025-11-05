@@ -81,6 +81,30 @@
     }
   }
 
+  @available(
+    iOS,
+    introduced: 13,
+    obsoleted: 17,
+    message: "Use @Bindable without the 'Perception.' prefix."
+  )
+  @available(
+    macOS,
+    introduced: 10.15,
+    obsoleted: 14,
+    message: "Use @Bindable without the 'Perception.' prefix."
+  )
+  @available(
+    tvOS,
+    introduced: 13,
+    obsoleted: 17,
+    message: "Use @Bindable without the 'Perception.' prefix."
+  )
+  @available(
+    watchOS,
+    introduced: 6,
+    obsoleted: 10,
+    message: "Use @Bindable without the 'Perception.' prefix."
+  )
   @available(visionOS, unavailable)
   extension Bindable: Identifiable where Value: Identifiable {
     public var id: Value.ID {
@@ -88,6 +112,30 @@
     }
   }
 
+  @available(
+    iOS,
+    introduced: 13,
+    obsoleted: 17,
+    message: "Use @Bindable without the 'Perception.' prefix."
+  )
+  @available(
+    macOS,
+    introduced: 10.15,
+    obsoleted: 14,
+    message: "Use @Bindable without the 'Perception.' prefix."
+  )
+  @available(
+    tvOS,
+    introduced: 13,
+    obsoleted: 17,
+    message: "Use @Bindable without the 'Perception.' prefix."
+  )
+  @available(
+    watchOS,
+    introduced: 6,
+    obsoleted: 10,
+    message: "Use @Bindable without the 'Perception.' prefix."
+  )
   @available(visionOS, unavailable)
   extension Bindable: Sendable where Value: Sendable {}
 
