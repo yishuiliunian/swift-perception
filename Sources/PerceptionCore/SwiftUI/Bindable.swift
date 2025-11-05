@@ -139,6 +139,30 @@
   @available(visionOS, unavailable)
   extension Bindable: Sendable where Value: Sendable {}
 
+   @available(
+    iOS,
+    introduced: 13,
+    obsoleted: 17,
+    message: "Use @Bindable without the 'Perception.' prefix."
+  )
+  @available(
+    macOS,
+    introduced: 10.15,
+    obsoleted: 14,
+    message: "Use @Bindable without the 'Perception.' prefix."
+  )
+  @available(
+    tvOS,
+    introduced: 13,
+    obsoleted: 17,
+    message: "Use @Bindable without the 'Perception.' prefix."
+  )
+  @available(
+    watchOS,
+    introduced: 6,
+    obsoleted: 10,
+    message: "Use @Bindable without the 'Perception.' prefix."
+  )
   private final class Observer<Object>: ObservableObject {
     var object: Object
     init(_ object: Object) {
@@ -146,6 +170,30 @@
     }
   }
 
+ @available(
+    iOS,
+    introduced: 13,
+    obsoleted: 17,
+    message: "Use @Bindable without the 'Perception.' prefix."
+  )
+  @available(
+    macOS,
+    introduced: 10.15,
+    obsoleted: 14,
+    message: "Use @Bindable without the 'Perception.' prefix."
+  )
+  @available(
+    tvOS,
+    introduced: 13,
+    obsoleted: 17,
+    message: "Use @Bindable without the 'Perception.' prefix."
+  )
+  @available(
+    watchOS,
+    introduced: 6,
+    obsoleted: 10,
+    message: "Use @Bindable without the 'Perception.' prefix."
+  )
   extension Observer: Equatable where Object: AnyObject {
     static func == (lhs: Observer, rhs: Observer) -> Bool {
       lhs.object === rhs.object
